@@ -10,8 +10,8 @@ function Hero() {
     navigate(path);
   };
   return (
-    <section className='my-10 md:my-20 lg:my-28 px-4 sm:px-6'>
-      <div className='flex flex-col items-center justify-center h-full gap-4 max-w-7xl mx-auto my-12'>
+    <section className='my-15'>
+      <div className='flex flex-col items-center justify-center h-full gap-4 max-w-7xl mx-auto my-17'>
         <div className='flex items-center justify-center bg-white/20 hover:bg-white/15 transition-all duration-300 rounded-4xl p-2 sm:p-3 gap-2 px-2 w-fit mx-auto'>
           <Star className='size-4' />
           <h1 className='text-sm'>Now with real-time collaboration</h1>

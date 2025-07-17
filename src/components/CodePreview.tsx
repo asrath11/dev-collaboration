@@ -9,12 +9,12 @@ function CodePreview() {
             <div className='w-3 h-3 rounded-full bg-green-500'></div>
           </div>
           <span className='text-sm text-muted-foreground ml-4'>
-            CodeTogether Editor
+            CodeBuddies Editor
           </span>
         </div>
         <div className='p-6 bg-editor text-sm font-mono'>
           <div className='space-y-2'>
-            <div className='text-blue-400'>// Welcome to CodeTogether! 🚀</div>
+            <div className='text-blue-400'>// Welcome to CodeBuddies! 🚀</div>
             <div className='text-gray-300'>
               <span className='text-purple-400'>function</span>{' '}
               <span className='text-yellow-300'>collaborativeCode</span>
