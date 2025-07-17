@@ -10,8 +10,8 @@ import { CiMail } from 'react-icons/ci';
 
 function SignIn() {
   const navigate = useNavigate();
-  const handleBackToHome = () => {
-    navigate('/');
+  const handleNavigate = (path: string) => {
+    navigate(path);
   };
   const [form, setForm] = useState({
     email: '',
@@ -33,7 +33,7 @@ function SignIn() {
   return (
     <section className='min-h-screen w-full flex flex-col items-center justify-center gap-4 p-4 border-2'>
       <div className='w-full max-w-[400px]'>
-        <Button variant='ghost' onClick={handleBackToHome}>
+        <Button variant='ghost' onClick={() => handleNavigate('/')}>
           <ArrowLeft className='mr-2' />
           Back to Home
         </Button>
@@ -45,7 +45,7 @@ function SignIn() {
       </p>
       <form
         onSubmit={handleSubmit}
-        className='h-[450px] w-[500px] rounded-xl p-4 flex flex-col space-y-4 bg-card text-card-foreground border-2'
+        className='w-full max-w-[400px] rounded-xl p-4 flex flex-col space-y-4 bg-card text-card-foreground border-2'
       >
         <h1 className='text-2xl font-bold text-center'>Sign In</h1>
         <Label htmlFor='email'>Email</Label>
@@ -91,7 +91,9 @@ function SignIn() {
         </div>
         <div className='flex items-center justify-center'>
           <p className='text-muted-foreground'>Don't have an account?</p>
-          <Button variant='link'>Sign Up</Button>
+          <Button variant='link' onClick={() => handleNavigate('/sign-up')}>
+            Sign Up
+          </Button>
         </div>
       </form>
     </section>
