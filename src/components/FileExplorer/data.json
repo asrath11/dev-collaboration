@@ -1,0 +1,52 @@
+[
+  {
+    "id": "root",
+    "name": "project",
+    "isFolder": true,
+    "isOpen": true,
+    "children": [
+      {
+        "id": "src",
+        "name": "src",
+        "isFolder": true,
+        "isOpen": true,
+        "children": [
+          {
+            "id": "app.js",
+            "name": "App.js",
+            "isFile": true,
+            "content": "console.log('App')"
+          },
+          {
+            "id": "index.js",
+            "name": "index.js",
+            "isFile": true,
+            "content": "console.log('Index')"
+          },
+          {
+            "id": "components",
+            "name": "components",
+            "isFolder": true,
+            "isOpen": false,
+            "children": [
+              {
+                "id": "header.js",
+                "name": "Header.js",
+                "isFile": true,
+                "content": "console.log('Header')"
+              },
+              {
+                "id": "footer.js",
+                "name": "Footer.js",
+                "isFile": true,
+                "content": "console.log('Footer')"
+              }
+            ]
+          }
+        ]
+      },
+      { "id": "package.json", "name": "package.json", "isFile": true },
+      { "id": "readme.md", "name": "README.md", "isFile": true }
+    ]
+  }
+]

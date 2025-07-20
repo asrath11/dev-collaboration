@@ -87,7 +87,7 @@ function SignUp() {
           />
         </div>
         <Button type='submit' className='w-full rounded-xl py-2'>
-          Sign Up
+          Create Account
         </Button>
         <div className='relative py-4'>
           <div className='absolute inset-0 flex items-center'>
