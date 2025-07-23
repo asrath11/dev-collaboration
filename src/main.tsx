@@ -11,7 +11,6 @@ import Home from './pages/Home.tsx';
 import SignIn from './pages/SignIn.tsx';
 import SignUp from './pages/SignUp.tsx';
 import Editor from './pages/Editor.tsx';
-import { FileProvider } from './contexts/FileContext.tsx';
 const router = createBrowserRouter(
   createRoutesFromChildren(
     <>
@@ -24,8 +23,6 @@ const router = createBrowserRouter(
 );
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <FileProvider>
-      <RouterProvider router={router} />
-    </FileProvider>
+    <RouterProvider router={router} />
   </StrictMode>
 );
