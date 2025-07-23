@@ -1,10 +1,10 @@
 import { useRef } from 'react';
 import Editor from '@monaco-editor/react';
-import { useFileContext } from '../../contexts/FileContext';
+import { useFileStore } from '../../stores/useFileStore';
 
 function CodeEditor() {
-  const editorRef = useRef<any>(null);
-  const { selectActiveItem } = useFileContext();
+  const editorRef = useRef(null);
+  const { selectedActiveItem } = useFileStore();
 
   function handleEditorDidMount(editor: any) {
     editorRef.current = editor;
@@ -19,7 +19,7 @@ function CodeEditor() {
   return (
     <Editor
       defaultLanguage='javascript'
-      value={selectActiveItem?.content || ''}
+      value={selectedActiveItem?.content || ''}
       onChange={handleEditorChange}
       onMount={handleEditorDidMount}
       height={'100%'}

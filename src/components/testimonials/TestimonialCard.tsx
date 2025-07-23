@@ -1,9 +1,5 @@
-type TestimonialCardProps = {
-  name: string;
-  role: string;
-  content: string;
-  avatar: string;
-};
+import type { TestimonialCardProps } from '../../types/index';
+
 function TestimonialCard({ name, role, content, avatar }: TestimonialCardProps) {
   return (
     <div className='p-6 bg-card text-card-foreground border-2 h-[170px] space-y-4 rounded-xl flex flex-col'>
